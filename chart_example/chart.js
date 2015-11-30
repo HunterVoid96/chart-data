@@ -3,7 +3,7 @@ var chart;
 var startTime;
 
 $(document).on("pagecreate", "#chartPage", function () {
-	updateChart.frequency = 3000;
+	
 	//store start time in unixtime 
 	startTime = Date.now();
 	
@@ -36,7 +36,7 @@ $(document).on("pagecreate", "#chartPage", function () {
 });
 
 function updateChart(random) {
-      	
+      	updateChart.frequency = 3000;
       	//set new random y values
       	yVal = random;
 		
