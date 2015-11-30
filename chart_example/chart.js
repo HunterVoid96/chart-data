@@ -3,7 +3,7 @@ var chart;
 var startTime;
 
 $(document).on("pagecreate", "#chartPage", function () {
-	
+	updateChart.frequency = 3000;
 	//store start time in unixtime 
 	startTime = Date.now();
 	
