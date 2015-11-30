@@ -17,25 +17,57 @@ $(document).on("pagecreate", "#chartPage", function () {
 	
 	//setup chart
     chart = new CanvasJS.Chart("chartContainer",{
-      	title :{
-      		text: "A random chart"
-      	},
-		data: [{        
-        type: "column",
+      title:{
+      text: "Multi-Series Line Chart"  
+      },
+      data: [
+      {        
+        type: "line",
         dataPoints: [
-        { x: 10, y: 171 },
-        { x: 20, y: 155},
-        { x: 30, y: 150 },
-        { x: 40, y: 165 },
-        { x: 50, y: 195 },
-        { x: 60, y: 168 },
-        { x: 70, y: 128 },
-        { x: 80, y: 134 },
-        { x: 90, y: 114}
+        { x: 10, y: 21 },
+        { x: 20, y: 25},
+        { x: 30, y: 20 },
+        { x: 40, y: 25 },
+        { x: 50, y: 27 },
+        { x: 60, y: 28 },
+        { x: 70, y: 28 },
+        { x: 80, y: 24 },
+        { x: 90, y: 26}
+      
         ]
       },
-      {        
-        type: "column",
+        {        
+        type: "line",
+        dataPoints: [
+        { x: 10, y: 31 },
+        { x: 20, y: 35},
+        { x: 30, y: 30 },
+        { x: 40, y: 35 },
+        { x: 50, y: 35 },
+        { x: 60, y: 38 },
+        { x: 70, y: 38 },
+        { x: 80, y: 34 },
+        { x: 90, y: 44}
+      
+        ]
+      },
+        {        
+        type: "line",
+        dataPoints: [
+        { x: 10, y: 45 },
+        { x: 20, y: 50},
+        { x: 30, y: 40 },
+        { x: 40, y: 45 },
+        { x: 50, y: 45 },
+        { x: 60, y: 48 },
+        { x: 70, y: 43 },
+        { x: 80, y: 41 },
+        { x: 90, y: 28}
+      
+        ]
+      },
+        {        
+        type: "line",
         dataPoints: [
         { x: 10, y: 71 },
         { x: 20, y: 55},
@@ -46,10 +78,12 @@ $(document).on("pagecreate", "#chartPage", function () {
         { x: 70, y: 28 },
         { x: 80, y: 34 },
         { x: 90, y: 14}
+      
         ]
-      }        
+      }
       ]
     });
+
 
 function updateChart(random) {
       	updateChart.frequency = 3000;
