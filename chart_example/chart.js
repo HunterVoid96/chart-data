@@ -37,6 +37,9 @@ $(document).on("pagecreate", "#chartPage", function () {
 
 function updateChart(random) {
       	updateChart.frequency = 3000;
+		randomValue = Math.random();
+		updateChart(randomValue);
+		
       	//set new random y values
       	yVal = random;
 		
